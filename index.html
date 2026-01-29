@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ESP32 Bluetooth LEDs</title>
+
+  <!-- Styles extra Datei -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="box">
+    <h1>ESP32 Web Bluetooth</h1>
+    <p>Verbinden und LEDs steuern (Chrome/Edge + localhost)</p>
+
+    <div class="status">
+      <span id="statusDot" class="dot"></span>
+      <span id="statusText">Nicht verbunden</span>
+
+      <button id="btnConnect" class="btn main">Verbinden</button>
+    </div>
+
+    <div class="buttons">
+      <button id="btnLed1" class="btn" disabled>LED 1</button>
+      <button id="btnLed2" class="btn" disabled>LED 2</button>
+      <button id="btnOff" class="btn red" disabled>Alles aus</button>
+    </div>
+
+    <div class="log" id="logBox">Ready…</div>
+  </div>
+
+  <!-- JS extra Datei -->
+  <script src="app.js"></script>
+</body>
+</html>

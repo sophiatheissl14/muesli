@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b1220;
+  color: #e8eefc;
+  display: flex;
+  justify-content: center;
+  padding: 30px 12px;
+}
+
+.box {
+  width: 100%;
+  max-width: 600px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: 18px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 22px;
+}
+
+p {
+  margin: 0 0 14px;
+  opacity: 0.8;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #64748b;
+}
+
+.dot.ok { background: #22c55e; }
+.dot.bad { background: #ef4444; }
+
+.buttons {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.btn {
+  border: 1px solid rgba(255,255,255,0.14);
+  background: rgba(255,255,255,0.08);
+  color: #e8eefc;
+  border-radius: 12px;
+  padding: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btn.main {
+  margin-left: auto;
+  background: rgba(99,102,241,0.30);
+  border-color: rgba(99,102,241,0.45);
+}
+
+.btn.red {
+  grid-column: span 2;
+  background: rgba(239,68,68,0.22);
+  border-color: rgba(239,68,68,0.40);
+}
+
+.log {
+  margin-top: 12px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.25);
+  border: 1px solid rgba(255,255,255,0.10);
+  font-family: Consolas, monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  min-height: 50px;
+}
