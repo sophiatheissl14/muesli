@@ -21,6 +21,10 @@ async function connect() {
       filters: [{ services: [SERVICE_UUID] }]
     });
 
+    document.getElementById("btn1").addEventListener("click", () => {
+  console.log("Rezept 1 gedrückt");
+});
+
     statusEl.textContent = "Status: verbinde...";
     server = await device.gatt.connect();
     service = await server.getPrimaryService(SERVICE_UUID);
@@ -49,3 +53,4 @@ btns.forEach((b, i) => {
 btnStop.addEventListener("click", () => sendValue("0"));
 
 setEnabled(false);
+
